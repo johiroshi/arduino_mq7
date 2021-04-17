@@ -17,9 +17,6 @@ void setup() {
 
 void loop() {
 
-  float analog_0 = analogRead(AOUTpin);
-  float voltage_0 = (analog_0*5)/1024;
-  
   Serial.print(mq7.getPPM());
   Serial.println("");
   delay(1000);
